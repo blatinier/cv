@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+%\usepackage[scale=0.8]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[encapsulated]{CJK}
+% Japanese input
+\newenvironment{Japanese}{%
+\CJKfamily{min}%
+\CJKtilde
+\CJKnospace}{}
+
+\firstname{Benoît}
+\familyname{Latinier}
+\title{Ingénieur R\&D}
+\address{37 rue Alphonse Tanguy}{56100 Lorient}
+\mobile{06 29 69 26 61}
+\email{benoit@latinier.fr}
+
+\begin{document}
+    \maketitle
+
+    \section{Diplômes et études}
+        \cventry{2011}{Ingénieur en informatique et mathématiques appliquées}{ENSEEIHT}{Toulouse}{}{}
+        \cventry{2008}{Classe préparatoire MPSI/MP}{Lycée A.R.Lesage}{Vannes}{}{}
+        \cventry{2006}{Baccalauréat scientifique, mention B}{Lycée Marcelin Berthelot}{Questembert}{}{}
+
+    \section{Expériences}
+        \subsection{Emplois}
+            \cventry{Fin 2013\\à Février 2017}{Ingénieur développement (technical lead R\&D) et administrateur système}{Dolead.com}{Paris}{}
+                {Développement d'une technologie de management automatique de campagne AdWords et BingAds. \newline{}
+                Développement d'algorithmes de bidding. \newline{}
+                Développement d'algorithmes d'amplification sémantique et de catégorisation.\newline{}
+                Connexion aux API Google AdWords et BingAds et automatisations d'opérations de synchronisations.\newline{}
+                Python, MongoDB, ElasticSearch, Redis, celery.\newline{}\newline{}
+                Développement d'une application web permettant la gestion de campagne AdWords et BingAds en utilisant la technologie Dolead.\newline{}
+                Python, Flask, React.js, JavaScript (jQuery, lodash), HTML/CSS (Bootstrap).\newline{}}
+            \cventry{Avril 2011\\à fin 2013}{Ingénieur développement (technical lead R\&D) et administrateur système}{Groupe Durable.com}{Paris}{}
+                {Administration des serveurs de production (sécurité, administration et Shell scripting).\newline{}
+                Développement d'une plate-forme d'affiliation et d'outils de génération de leads (Python, PHP, HTML/CSS, JavaScript). \newline{}}
+            \cventry{Octobre 2009\\à Nov. 2009}{Développement en freelance}{NoticiasB2B}{Toulouse}{France}
+                {Développement pour le back office d'un site destiné aux professionnels du journalisme.}
+
+        \subsection{Stages}
+            \cventry{Juin 2010\\à Sept. 2010}
+                {Recherche en mathématiques appliquées}
+%                {Université de Kyûshû (\begin{CJK}{UTF8}{song}九州大学\end{CJK})}
+                {Université de Kyûshû}
+                {Fukuoka}
+                {Japon}
+                {Implémentation d'autocorrection et de préconditionneurs à une méthode de résolution de systèmes d'équations linéaires (FORTRAN)}
+            \cventry{Juin 2009\\à Sept. 2009}
+                {Développement web}
+                {Noticias B2B}
+                {Barcelone}
+                {Espagne}
+                {Développement d'une interface de facturation et interfaçage avec PayPal}
+
+    \section{Compétences}
+        \subsection{Informatique}
+            \cvcomputer{Langages}{Python, PHP, HTML/CSS, JavaScript(jQuery, React.js)}{Frameworks}{Flask, Django}
+            \cvcomputer{Administration système}{Expérience de gestion d'une quarantaine de serveurs sur AWS}{Bases de données}{MySQL, MongoDB, Redis, ElasticSearch}
+            \cvcomputer{Outils DevOps}{Fabric, Ansible, Docker}{CI}{Jenkins, Travis}
+            \cvcomputer{Systèmes d'exploitation}{GNU/Linux (Debian, Archlinux)}{}{}
+
+        \subsection{Langues}
+            \cvlanguage{Anglais}{lu, parlé, écrit}{}
+            \cvlanguage{Espagnol}{lu, parlé}{}
+            \cvlanguage{Japonais}{bases}{}
+
+    \section{Divers}
+        \cvline{Voyage}{2017 - 1 an de voyage en camping car en famille (Europe, Russie, Amérique du Sud)}
+        \cvline{Loisirs}{Karaté (ceinture noire), Natation, jeu de go.}
+        \cvline{Autres}{Permis B}
+\end{document}
