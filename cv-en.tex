@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+%\usepackage[scale=0.8]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[encapsulated]{CJK}
+% Japanese input
+\newenvironment{Japanese}{%
+\CJKfamily{min}%
+\CJKtilde
+\CJKnospace}{}
+
+\firstname{Benoît}
+\familyname{Latinier}
+\title{Fullstack developer}
+\address{37 rue Alphonse Tanguy}{56100 Lorient}
+\mobile{+336 29 69 26 61}
+\email{benoit@latinier.fr}
+
+\begin{document}
+    \maketitle
+
+    \section{Education}
+        \cventry{2011}{Engineer in computer science and applied mathematics}{ENSEEIHT}{Toulouse}{}{}
+        \cventry{2008}{Preparatory class MPSI/MP (mathematics and physics}{Lycée A.R.Lesage}{Vannes}{}{}
+        \cventry{2006}{Baccalauréat scientic}{Lycée Marcelin Berthelot}{Questembert}{}{}
+
+    \section{Experiences}
+        \subsection{Jobs}
+            \cventry{End of 2013\\to February 2017}{Technical lead R\&D and DevOps}{Dolead.com}{Paris}{}
+                {Developed a technology of automated management of AdWords and BingAds SEM campaigns. \newline{}
+                Developed bidding algorithms. \newline{}
+                Developed keyword generation algorithms and semantic word categorizers. \newline{}
+                Connection to Google AdWords and BingAds API and automate operations (bidding, keywords generation...).\newline{}
+                Python, MongoDB, ElasticSearch, Redis, celery.\newline{}\newline{}
+                Developed a web application allow users to manage their SEM campaigns through Dolead technology.\newline{}
+                Python, Flask, React.js, JavaScript (jQuery, lodash), HTML/CSS (Bootstrap).\newline{}}
+            \cventry{April 2011\\to end of 2013}{Technical lead R\&D and System administrator}{Groupe Durable.com}{Paris}{}
+                {System administration of company production servers (security, system administration and Shell scripting).\newline{}
+                Developed an affiliate platform and tools for lead generation (Python, PHP, HTML/CSS, JavaScript). \newline{}}
+            \cventry{October 2009\\to Nov. 2009}{Freelance}{NoticiasB2B}{Toulouse}{France}
+                {Development for a website dedicated to news releases professionals.}
+
+        \subsection{Internships}
+            \cventry{June 2010\\to Sept. 2010}
+                {Applied mathematics research}
+%                {Kyûshû University(\begin{CJK}{UTF8}{song}九州大学\end{CJK})}
+                {Kyûshû University}
+                {Fukuoka}
+                {Japan}
+                {Implemented auto-correction methods and preconditioners for a method used to solve linear equations systems (FORTRAN)}
+            \cventry{June 2009\\àtoept. 2009}
+                {Web development}
+                {Noticias B2B}
+                {Barcelona}
+                {Spain}
+                {Developed an invoice interface with connection to Paypal}
+
+    \section{Skills}
+        \subsection{Computer science}
+            \cvline{Languages}{Python, HTML/CSS, JavaScript(jQuery, React.js), PHP}
+            \cvline{Frameworks}{Flask, Django}
+            \cvline{SysAdmin}{Experience handling forty AWS servers}
+            \cvline{Databases}{MySQL, MongoDB, Redis, ElasticSearch}
+            \cvline{DevOps}{Fabric, Ansible, Docker}
+            \cvline{CI}{Jenkins, Travis}
+            \cvline{OS}{GNU/Linux (Debian, Archlinux)}
+
+        \subsection{Languages}
+            \cvlanguage{French}{Native}{}
+            \cvlanguage{English}{Fluent}{}
+            \cvlanguage{Spanish}{Enough for day to day life}{}
+            \cvlanguage{Japanese}{Basic language}{}
+
+    \section{Divers}
+        \cvline{Travel}{2017 - One year travelling with my family in a motorhome (Europe, Russia, South America)}
+        \cvline{Other}{Karate (black belt)}
+\end{document}
